@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import profile from "../assets/profile.png.jpg";
 
 
@@ -152,6 +152,13 @@ function Hero() {
             <FaGithub />
 
           </a>
+          <a
+  href="https://www.linkedin.com/in/kavitha-vennam-619678335/"
+  target="_blank"
+  rel="noreferrer"
+>
+  <FaLinkedin />
+</a>
 
 
 

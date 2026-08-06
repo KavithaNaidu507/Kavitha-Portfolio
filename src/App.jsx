@@ -1,40 +1,40 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Education from "./components/Education";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
-import "./index.css";
+import {
+BrowserRouter,
+Routes,
+Route
+} from "react-router-dom";
 
 
-function App() {
+import Welcome from "./pages/Welcome";
+import Portfolio from "./pages/Portfolio";
 
-  return (
 
-    <>
+function App(){
 
-      <Navbar />
+return(
 
-      <Hero />
+<BrowserRouter>
 
-      <About />
+<Routes>
 
-      <Skills />
 
-      <Projects />
+<Route
+path="/"
+element={<Welcome/>}
+/>
 
-      <Education />
 
-      <Contact />
+<Route
+path="/portfolio"
+element={<Portfolio/>}
+/>
 
-      <Footer />
 
-    </>
+</Routes>
 
-  );
+</BrowserRouter>
+
+);
 
 }
 
